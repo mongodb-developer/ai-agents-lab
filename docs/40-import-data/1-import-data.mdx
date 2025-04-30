@@ -6,14 +6,12 @@ Let's import the data required by these tools into two MongoDB collections. This
 
 Run the cells under the **Step 2: Import data into MongoDB** section in the notebook to import the data required by the agent's tools, into MongoDB collections.
 
-To verify that the data has been imported into your MongoDB cluster, navigate to the **Overview** page in the Atlas UI. In the **Clusters section**, select your cluster and click **Browse collections**.
+To verify that the data has been imported into your MongoDB database, select the MongoDB leaf icon in the left toolbar.
 
-<Screenshot url="https://cloud.mongodb.com" src="img/screenshots/40-import-data/1-import-data/1-browse-collections.png" alt="Browse collections" />
+<Screenshot src="img/screenshots/40-import-data/1-import-data/1-select-mongodb.png" alt="Select MongoDB icon" />
 
-Ensure that you see a database called _mongodb_genai_devday_, and two collections namely _mongodb-docs_ and _mongodb-docs-embedded_ under it. Note the number and format of documents in both the collections.
+Select **Add Connection**, then **Connect**. Finally, enter the connection string ```mongodb://admin:mongodb@mongodb:27017/``` in the top text input:
 
-The _mongodb-docs-embedded_ collection chunked versions of documents in the _mongodb-docs_ collection, and hence has a higher document count.
+<Screenshot src="img/screenshots/40-import-data/1-import-data/2-enter-conn-string.png" alt="Enter commection string" />
 
-<Screenshot url="https://cloud.mongodb.com" src="img/screenshots/40-import-data/1-import-data/2-full-collection.png" alt="Chunked collection" />
-
-<Screenshot url="https://cloud.mongodb.com" src="img/screenshots/40-import-data/1-import-data/3-chunked-collection.png" alt="Full collection" />
+You can select the ```mongodb_genai_devday_agents / mongodb_docs``` collection from the left panel, and browse the documents you'll find there.
