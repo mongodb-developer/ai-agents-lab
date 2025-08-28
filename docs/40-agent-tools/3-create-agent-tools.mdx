@@ -14,13 +14,24 @@ The answers for code blocks in this section are as follows:
 
 ## Vector search tool
 
+**CODE_BLOCK_1**
+
+<details>
+<summary>Answer</summary>
+<div>
+```python
+vo.contextualized_embed(inputs=[[query]], model="voyage-context-3", input_type="query")
+```
+</div>
+</details>
+
 **CODE_BLOCK_2**
 
 <details>
 <summary>Answer</summary>
 <div>
 ```python
-embedding_model.encode(text)
+embds_obj.results[0].embeddings[0]
 ```
 </div>
 </details>
@@ -31,7 +42,7 @@ embedding_model.encode(text)
 <summary>Answer</summary>
 <div>
 ```python
-get_embedding(user_query)
+get_embeddings(user_query)
 ```
 </div>
 </details>
