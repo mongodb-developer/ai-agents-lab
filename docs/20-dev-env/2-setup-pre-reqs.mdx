@@ -2,6 +2,8 @@
 
 Set the passkey and LLM provider provided by your instructor, and run the cells under the **Step 1: Setup prerequisites** section in the notebook.
 
+:::caution
+
 ### Expired passkey OR don't have a passkey
 
 Passkeys are provided to you at MongoDB Developer Days to easily get API keys for LLM and embedding APIs that are used in the workshop. These passkeys are valid for 3 days after the workshop.
@@ -26,6 +28,9 @@ os.environ["VOYAGE_API_KEY"] = "your-voyageai-api-key"
 ```python
 os.environ["GOOGLE_API_KEY"] = "your-google-api-key"
 ```
+:::
+
+:::caution
 
 ### If you are running the lab locally
 
@@ -42,3 +47,4 @@ If you aren't using Instruqt or GitHub Codespaces to run the lab and instead run
 ```python
 MONGODB_URI = "your_connection_string"
 ```
+:::
